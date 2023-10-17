@@ -7,10 +7,14 @@
     padding: 15px;
     border: solid 1px;
     background-color: rgb(212, 212, 212);
+    border-radius: 15px;
+    border-color: rgb(13, 13, 83);
 }
 
 .menu {
     text-align: center;
+    font-family: Trebuchet MS;
+    color: rgb(13, 13, 83);
 }
 
 .option {
@@ -22,6 +26,7 @@
 
 .left {
     width: 380px;
+    color: rgb(13, 13, 83);
 }
 
 .right {
@@ -33,5 +38,6 @@
 .list {
     width: 150px;
 }
+
 
 
