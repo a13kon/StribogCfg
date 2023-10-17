@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>StribogCfg</title>
+    <meta caherset="utf-8">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="main">
+            <div class="background">
+                <div>
+                    <div class="menu"><p>-=ВЕНТИЛЯТОРЫ=-</p></div>
+                    <div class ="option">
+                        <div class="left">C01 Использовать вытяжной вентилятор</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C02 Использовать датчик перепада давления</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                </div>
+                <div>
+                    <div class="menu"><p>-=НАГРЕВАТЕЛИ=-</p></div>
+                    <div class ="option">
+                        <div class="left">C03 Количество нагревателей</div>
+                        <div class="right">
+                            <select class="list">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                            </select> 
+                        </div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C04 Тип первого нагревателя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>Водяной</option>
+                                <option>Электрический</option>
+                            </select> 
+                        </div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C05 Тип управления первого нагревателя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>Линейное</option>
+                                <option>Двоичное</option>
+                            </select> 
+                        </div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C06 Количество ступеней первого нагревателя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                            </select> 
+                        </div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C07 Режим работы второго нагревателя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>Основной</option>
+                                <option>Дополнительный</option>
+                            </select> 
+                        </div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C08 Тип второго нагревателя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>Водяной</option>
+                                <option>Электрический</option>
+                            </select> 
+                        </div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C09 Тип управления второго нагревателя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>Линейное</option>
+                                <option>Двоичное</option>
+                            </select> 
+                        </div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C10 Количество ступеней второго нагревателя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                            </select> 
+                        </div>   
+                    </div>
+                </div>
+                <div>
+                    <div class="menu"><p>-=ОХЛАДИТЕЛИ=-</p></div>
+                    <div class ="option">
+                        <div class="left">C11 Использовать ККБ</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C12 Использовать чиллер</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                </div>
+                <div>
+                    <div class="menu"><p>-=ОСУШЕНИЕ=-</p></div>
+                    <div class ="option">
+                        <div class="left">C13 Управление осушением</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C14 Управление увлажнением</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C15 Тип увлажнителя</div>
+                        <div class="right"> 
+                            <select class="list">
+                                <option>Аналоговый</option>
+                                <option>Дискретный</option>
+                                <option>Адиабатический</option>
+                            </select> 
+                        </div>   
+                    </div>
+                </div>
+                <div>
+                    <div class="menu"><p>-=Утилизация=-</p></div>
+                    <div class ="option">
+                        <div class="left">C16 Управление рециркуляцией</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C17 Управление роторным рекуператором</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                </div>
+                <div>
+                    <div class="menu"><p>-=ДАТЧИКИ=-</p></div>
+                    <div class ="option">
+                        <div class="left">C18 Использовать наружный датчик температуры</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C19 Использовать вытяжной датчик температуры</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C20 Использовать доп. датчик температуры</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C21 Использовать вытяжной датчик влажности</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                    <div class ="option">
+                        <div class="left">C22 Использовать приточный датчик влажности</div>
+                        <div class="right"><input type="checkbox"></div>   
+                    </div>
+                </div>
+                <div>
+                    <input type="button">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+           
