@@ -1,7 +1,5 @@
 "use strict";
 
-log();
-log();
 
 function log() {
     console.log('click');
