@@ -32,17 +32,6 @@ document.getElementById("inpC08").addEventListener('click', setVisibility);
 // }
 // else obj.style.display = "none";
 
-if (a) {
-    true1
-    if (b) 
-        true2
-    else
-        false2
-else
-false1
-false2
-}
-
 //функция динамического отображения элементов и динамических значений
 function setVisibility() {
 
