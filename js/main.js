@@ -32,15 +32,44 @@ document.getElementById("inpC08").addEventListener('click', setVisibility);
 // }
 // else obj.style.display = "none";
 
+if (a) {
+    true1
+    if (b) 
+        true2
+    else
+        false2
+else
+false1
+false2
+}
+
 //функция динамического отображения элементов и динамических значений
 function setVisibility() {
-    getElemStatus("inpC03") > 0?                                    divC04.style.display = "flex" : divC04.style.display = "none";
-    getElemStatus("inpC03") > 0 && getElemStatus("inpC04") == 1?    divC05.style.display = "flex" : divC05.style.display = "none";
-    getElemStatus("inpC03") > 0 && getElemStatus("inpC04") == 1?    divC06.style.display = "flex" : divC06.style.display = "none";
+
+    if (getElemStatus("inpC03") > 0) {
+        divC04.style.display = "flex";
+        if (getElemStatus("inpC04") == 1){
+            divC05.style.display = "flex";
+            divC06.style.display = "flex";
+        }
+        else {
+            divC05.style.display = "none";
+            divC06.style.display = "none";
+        }
+    }
+    else {
+        divC04.style.display = "none";
+        divC05.style.display = "none";
+        divC06.style.display = "none";
+    }
+
+    // getElemStatus("inpC03") > 0?                                    divC04.style.display = "flex" : divC04.style.display = "none";
+    // getElemStatus("inpC03") > 0 && getElemStatus("inpC04") == 1?    divC05.style.display = "flex" : divC05.style.display = "none";
+    // getElemStatus("inpC03") > 0 && getElemStatus("inpC04") == 1?    divC06.style.display = "flex" : divC06.style.display = "none";
     getElemStatus("inpC03") > 1?                                    divC07.style.display = "flex" : divC07.style.display = "none";
     getElemStatus("inpC03") > 1?                                    divC08.style.display = "flex" : divC08.style.display = "none";
-    getElemStatus("inpC03") > 1  && getElemStatus("inpC08") == 1?   divC09.style.display = "flex" : divC09.style.display = "none";
-    getElemStatus("inpC03") > 1  && getElemStatus("inpC08") == 1?   divC10.style.display = "flex" : divC10.style.display = "none";
+    getElemStatus("inpC03") > 1 && getElemStatus("inpC08") == 1?    divC09.style.display = "flex" : divC09.style.display = "none";
+    getElemStatus("inpC03") > 1 && getElemStatus("inpC08") == 1?    divC10.style.display = "flex" : divC10.style.display = "none";
 
 }
 
