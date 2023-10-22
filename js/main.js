@@ -4,6 +4,7 @@
 let configArr = [];
 
 //слуаштели событий
+//продумать возможность реализации универсальной функции
 let createBtn = document.getElementById("createBtn");
 createBtn.addEventListener('click', () => {rows.getValue(); createArrCfg("===========click===========", rows.value, rows.quaentity)});
 
