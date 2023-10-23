@@ -129,12 +129,12 @@ document.getElementById("inpC12").addEventListener('click', () => {
 
 document.getElementById("inpC13").addEventListener('click', () => {
     rows.getValue();
-    rows[20].checked = checkboxSetStatus(rows.value[12] == 1 || rows.value[13] == 1, rows.state[20].checked);
+    rows.state[20].checked = checkboxSetStatus(rows.value[12] == 1 || rows.value[13] == 1, rows.state[20].checked);
 });
 
 document.getElementById("inpC14").addEventListener('click', () => {
     rows.getValue();
-    rows[20].checked = checkboxSetStatus(rows.value[12] == 1 || rows.value[13] == 1, rows.state[20].checked);
+    rows.state[20].checked = checkboxSetStatus(rows.value[12] == 1 || rows.value[13] == 1, rows.state[20].checked);
     rows.setVisibility();
 });
 
@@ -155,7 +155,7 @@ document.getElementById("inpC20").addEventListener('click', () => {
 
 document.getElementById("inpC21").addEventListener('click', () => {
     rows.getValue();
-    rows[20].checked = checkboxSetStatus(rows.value[12] == 1 || rows.value[13] == 1, rows.state[20].checked);
+    rows.state[20].checked = checkboxSetStatus(rows.value[12] == 1 || rows.value[13] == 1, rows.state[20].checked);
 });
 
 function stepsVisibility (condition, value, defValue, ...option) {
