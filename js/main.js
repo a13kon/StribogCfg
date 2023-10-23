@@ -184,4 +184,3 @@ function createArrCfg(msg, arr, qua) {
          console.log(`[${i-1}] = ${arr[i-1]}`);
     }
 }
-
