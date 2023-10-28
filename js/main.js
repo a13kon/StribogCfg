@@ -177,7 +177,7 @@ function checkboxSetStatus(condition, value) {
     return condition ? true : value;
 }
 
-//в будущем создание файла, сейчас просто чек массива
+//в будущем создание файла, сейчас просто чек массива, мб fs
 function createArrCfg(msg, arr, qua) {
     console.log(msg);
       for (let i = 1; i <= qua; i++) {
