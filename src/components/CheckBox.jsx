@@ -7,7 +7,7 @@ const CheckBox = function({ onChange, text, hide, lock }){
     const changeCheckbox = (event) => {
         setCheck(event.target.checked);
         onChange(event.target.checked);
-        console.log(text);
+        //console.log(text);
     };
 
     // const handlerChange = (event) => {
@@ -18,8 +18,10 @@ const CheckBox = function({ onChange, text, hide, lock }){
             <table align="center">
             <tbody>
                 <tr>
-                <td  width={500}>{text}</td>
-                <td><input type="checkbox" checked={lock?true:check} onChange={changeCheckbox}></input></td>
+                <td width={500}>{text}</td>
+                <td><input type="checkbox" 
+                checked={lock?true:check} 
+                onChange={changeCheckbox}></input></td>
             </tr>
             </tbody>
             </table>

@@ -11,10 +11,11 @@ function App() {
 
   const handleChange1 = (chk1) => {
     setChk1(chk1)
+    setChk2(chk1)
   }
 
   const handleChange2 = (chk2) => {
-    setChk2(chk2)
+    if (!chk1) setChk2(chk2)
   }
 
   const handleChange3 = (chk3) => {
