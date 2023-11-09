@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <CheckBox onChange={handleChange1} text='C01 Использовать вытяжной вентилятор'/>
-      <CheckBox onChange={handleChange2} text='C02 Использовать вытяжной вентилятор'/>
+      <CheckBox onChange={handleChange2} text='C02 Использовать вытяжной вентилятор' lock={chk1}/>
       <CheckBox onChange={handleChange3} text='C03 Использовать вытяжной вентилятор'/>
       <button onClick={() => console.log(chk1, chk2, chk3)}>Log</button>
       {/* <h1 align="center">-= ВЕНТИЛЯТОРЫ =-</h1>

@@ -1,23 +1,29 @@
 import React, { useState } from 'react';
 
+const CheckBox = function({ onChange, text, hide, lock }){
 
+    const [check, setCheck] = useState(false);
 
-const CheckBox = function({ onChange, text, set }){
+    const changeCheckbox = (event) => {
+        setCheck(event.target.checked);
+        onChange(event.target.checked);
+        console.log(text);
+    };
 
-    const handlerChange = (event) => {
-       onChange(event.target.checked)
-    }
+    // const handlerChange = (event) => {
+    //     onChange(event);
+    // };
 
     return (
             <table align="center">
             <tbody>
                 <tr>
                 <td  width={500}>{text}</td>
-                <td><input type="checkbox" onChange={handlerChange}></input></td>
+                <td><input type="checkbox" checked={lock?true:check} onChange={changeCheckbox}></input></td>
             </tr>
             </tbody>
             </table>
-    )
+    );
 }
 
 export default CheckBox;
