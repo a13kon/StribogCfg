@@ -5,15 +5,35 @@ import CheckBox from './components/CheckBox';
 import { VideoList } from './components/VideoList';
 
 function App() {
+  const [chk1, setChk1] = useState(false)
+  const [chk2, setChk2] = useState(false)
+  const [chk3, setChk3] = useState(false)
+
+  const handleChange1 = (chk1) => {
+    setChk1(chk1)
+  }
+
+  const handleChange2 = (chk2) => {
+    setChk2(chk2)
+  }
+
+  const handleChange3 = (chk3) => {
+    setChk3(chk3)
+  }
+
   return (
     <>
-      <h1 align="center">-= ВЕНТИЛЯТОРЫ =-</h1>
+      <CheckBox onChange={handleChange1} text='C01 Использовать вытяжной вентилятор'/>
+      <CheckBox onChange={handleChange2} text='C02 Использовать вытяжной вентилятор'/>
+      <CheckBox onChange={handleChange3} text='C03 Использовать вытяжной вентилятор'/>
+      <button onClick={() => console.log(chk1, chk2, chk3)}>Log</button>
+      {/* <h1 align="center">-= ВЕНТИЛЯТОРЫ =-</h1>
       <CheckBox text ={'C01 Использовать вытяжной вентилятор'}  />
       <CheckBox text ={'C02 Использовать датчик перепада давления'} />
       <h1 align="center">-= НАГРЕВАТЕЛИ =-</h1>
       <CheckBox text ={'C03 Количество нагревателей'} />
-      <CheckBox text ={'C04 тип первого нагревателя'} />
-          </>
+      <CheckBox text ={'C04 тип первого нагревателя'} /> */}
+    </>
   );
 }
 
