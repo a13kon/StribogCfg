@@ -191,16 +191,5 @@ function createArrCfg(msg, arr, qua) {
     conf.href = URL.createObjectURL(file);
     conf.download = `conf_${document.getElementById('input').value}.txt`;
     conf.click();
-    // const file = path.join(__dirname, 'config.txt');
-    // const content = arr;
 
-    // fs.writeFile(file, content, (err) => {
-    //     if (err) console.log(err);
-
-    //     console.log(msg);
-    //     for (let i = 1; i <= qua; i++) {
-    //         console.log(`[${i-1}] = ${arr[i-1]}`);
-    //    }
-    //     console.log('file created');
-    // })
 }
