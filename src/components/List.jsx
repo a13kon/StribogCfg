@@ -1,18 +1,21 @@
 import React from 'react';
 
-const List = function({onChange, text, options, value}) {
+const List = function({onChange, text, options, value, hide, mainClass, textDivClass, listDivClass, listClass}) {
 
     const changelist = (event) => {
         onChange(event.target.value);
     }
 
+    if (!hide) {
     return (
-        <table align='center'>
-        <tbody>
-            <tr>
-            <td width='500px'>{text}</td>
-            <td>
-                <select 
+        
+        <div className= {mainClass}>
+            <div className= {textDivClass}>
+                {text}
+            </div>
+            <div className= {listDivClass}>
+            <select  
+                className= {listClass}
                 onChange={changelist}
                 value={value}>
                     {
@@ -24,20 +27,12 @@ const List = function({onChange, text, options, value}) {
                     )
                     }
                 </select>
-            </td>
-        </tr>
-        </tbody>
-        </table> 
-
-        // <div style={{display: 'flex',  justifyContent:'center', border: 'solid'}}>
-        //     <div style={{display: 'flex',  justifyContent:'left', width: '200px', border: 'solid'}}>
-        //         11111
-        //     </div>
-        //     <div style={{display: 'flex',  justifyContent:'right', border: 'solid', width: '200px' }}>
-        //         2222
-        //     </div>
-        // </div>
+            </div>
+        </div>
     )
+                } else {
+                    return (<></>)
+                }
 }
 
 export default List;
