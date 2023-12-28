@@ -341,6 +341,7 @@ const handleChangeC22 = (stateC22) => {
           checkClass='right'>
         </CheckBox>
 
+
         <button onClick={() => console.log( stateC01, 
                                             stateC02, 
                                             stateC03, 
