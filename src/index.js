@@ -1,10 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+const express = require('express');
+const error404 = require('../middleware/err-404');
+app = express();
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <App />
-);
+app.use(express.json());
+app.use(express.urlencoded());
+app.set('view engine', 'ejs');
+
+app.use(error404);
 
 
+
+app.listen(3000, () => {
+    console.log('server listening');
+});
