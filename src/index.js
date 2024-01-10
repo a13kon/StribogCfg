@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const error404 = require('../middleware/err-404');
 const indexRouter = require('../routers/index');
-//const configsRouter = require('../routers/configs');
+const configsRouter = require('../routers/configs');
 
 app = express();
      
@@ -12,7 +12,7 @@ app.use(express.urlencoded());
 app.set('view engine', 'ejs');
 
 app.use('/', indexRouter);
-//app.use('/configs', configsRouter);
+app.use('/configs', configsRouter);
 
 app.use(error404);
 

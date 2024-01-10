@@ -1,0 +1,52 @@
+<form method="POST" class="mt-5" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="inputTitle">Наименование</label>
+        <input type="text"
+                value="<%= config.title %>"
+                name="title"
+                class="form-control"
+                id="inputTitle">
+    </div>
+
+    <div class="form-group">
+        <label for="inputAuthors">Авторы</label>
+        <input type="text"
+                value="<%= config.authors %>"
+                name="authors"
+                class="form-control"
+                id="inputAuthors">
+    </div>
+
+    <div class="form-group">
+        <label for="inputDesc">Описание</label>
+        <textarea
+                rows="3"
+                name="description"
+                class="form-control"
+                id="inputDesc"
+        ><%= config.description %></textarea>
+    </div>
+
+        <div class="form-check">
+            <% if (config.favorite == 'true') { %>
+            <input type="checkbox"
+                    name="favorite"
+                    value="true"
+                    class="form-check-input"
+                    id="checkBoxFavorite"
+                    checked>
+            <%} else { %>
+                <input type="checkbox"
+                    name="favorite"
+                    value="true"
+                    class="form-check-input"
+                    id="checkBoxFavorite">
+            <% } %>
+            <label class="form-check-label" for="checkBoxFavorite"></label>
+    </div>
+
+
+    <div class="form-group text-right ">
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </div>
+</form>
