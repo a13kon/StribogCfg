@@ -27,24 +27,45 @@
         ><%= config.description %></textarea>
     </div>
 
-        <div class="form-check">
-            <% if (config.favorite == 'true') { %>
-            <input type="checkbox"
-                    name="favorite"
-                    value="true"
-                    class="form-check-input"
-                    id="checkBoxFavorite"
-                    checked>
-            <%} else { %>
-                <input type="checkbox"
-                    name="favorite"
-                    value="true"
-                    class="form-check-input"
-                    id="checkBoxFavorite">
-            <% } %>
-            <label class="form-check-label" for="checkBoxFavorite"></label>
-    </div>
+    <label>Вентиляторы</label>
+    
+        <div>
+            <table width="100%" cellspacing="0" cellpadding="4">
+                <tr>
+                    <td width="600">С01 Использовать вытяжной вентилятор</td>
+                    <td>
+                        <% if (config.C02 == 'true') { %>
+                            <input type="checkbox"
+                            name="C01"
+                            value="true"
+                            id="checkBoxC01"
+                            checked>
+                        <% } else { %>
+                            <input type="checkbox"
+                            name="C01"
+                            value="true"
+                            id="checkBoxC01">
+                        <% } %>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
+        <div>
+            <table width="100%" cellspacing="0" cellpadding="4">
+                <tr>
+                    <td width="600">С02 Использовать датчик перепада давления</td>
+                    <td>
+                        <input type="checkbox"
+                            name="C02"
+                            value="true"
+                            id="checkBoxC02">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+<label>Нагреватели</label>        
 
     <div class="form-group text-right ">
         <button type="submit" class="btn btn-primary">Сохранить</button>
